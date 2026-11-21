@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./src/assests/logo.png">
+    <title>Appointment | Medtik</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+    <!-- =====NAVBAR SECTION START===== -->
+    <header class="navbar" id="navbar">
+        <a href="index.html" class="logo" id="logo">
+            <span>✚</span> Medtik
+        </a>
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html" class="navlinks" id="homeLink">Home</a>
+            <a href="about.html" class="navlinks" id="aboutLink">About</a>
+            <a href="doctors.html" class="navlinks" id="doctorsLink">Doctors</a>
+            <a href="services.html" class="navlinks" id="servicesLink">Services</a>
+            <a href="contact.html" class="navlinks" id="contactLink">Contact</a>
+            <div class="nav-button">
+                <a href="login.html" class="login-btn" id="loginLink">Login</a>
+                <a href="appointment.html" class="nav-btn" id="navAppointment">Book Appointment</a>
+            </div>
+        </nav>
+
+        <button class="menu-btn" id="menuBtn">
+            ☰
+        </button>
+    </header>
+    <!-- =====NAVBAR SECTION END===== -->
+
+    <!-- =====APPOINTMENT SECTION START===== -->
+    <section class="service-appointment" id="serviceAppointment">
+        <div class="appointment-content" id="appointmentContent">
+            <div class="appointment-heading">
+                <span class="appointment-tag">
+                    BOOK YOUR VISIT
+                </span>
+                <h2>Book Your Appointment</h2>
+                <p>Schedule your visit with our expert doctors.</p>
+            </div>
+            <form action="" class="appointment-form" id="appointmentForm">
+                <div class="form-group">
+                    <label for="patientName">Patient Name</label>
+                    <input type="text" id="patientName" placeholder="Enter Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="patientPhone">Phone Number</label>
+                    <input type="number" id="patientPhone" placeholder="Enter Your Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <label for="selectDoctor">Select Doctor</label>
+                    <select id="selectDoctor">
+                        <option value="">Choose Doctor</option>
+                        <option>Dr. Ayesha Siddiqui</option>
+                        <option>Dr. Ahmed Khan</option>
+                        <option>Dr. Fatima Noor</option>
+                        <option>Dr. Sara Ahmed</option>
+                        <option>Dr. Usman Malik</option>
+                        <option>Dr. Bilal Hussain</option>
+
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="selectDepartment">Select Department</label>
+                    <select id="selectDepartment" required>
+                        <option value="">Choose Department</option>
+                        <option>Cardiology</option>
+                        <option>Neurology</option>
+                        <option>Dentistry</option>
+                        <option>Pediatrics</option>
+                        <option>Gynecology</option>
+                        <option>Dermatology</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="appointmentDate">Appointment Date</label>
+                    <input type="date" id="appointmentDate" required>
+                </div>
+                <div class="form-group full-width">
+                    <label for="appointmentTime">Appointment Time</label>
+                    <input type="time" id="appointmentTime" required>
+                </div>
+                <div class="form-group full-width">
+                    <label for="healthProblem">Message/ Health Problem</label>
+                    <textarea id="healthProblem" placeholder="Tell Us About your Health Problem..." rows="4"></textarea>
+                </div>
+                <button type="submit" class="primary-btn" id="BookAppointmentBtn">Book Appointment →</button>
+            </form>
+            <p id="formMessage"></p>
+            <p class="appointment-note">
+                Our team will contact you to confirm your appointment.
+            </p>
+        </div>
+    </section>
+
+    <div class="confirmation-box" id="confirmationBox">
+        <div class="confirmation-content">
+        <h3>&#10003; Appointment Confirmed!</h3>
+        <p id="confirmedName"></p>
+        <p id="confirmedPhone"></p>
+        <p id="confirmedDoctor"></p>
+        <p id="confirmedDepartment"></p>
+        <p id="confirmedDate"></p>
+        <p id="confirmedTime"></p>
+        <p id="confirmedHealth"></p>
+
+        <button type="button" id="closeConfirmation">Close</button>
+        </div>
+    </div>
+    <!-- =====APPOINTMENT SECTION END===== -->
+
+    <!-- =====FOOTER SECTION START====== -->
+    <footer class="footer" id="footer">
+        <div class="footer-container" id="footerContainer">
+            <div class="footer-about">
+                <h2>✚ Medtik</h2>
+                <p>Your health is our priority. We provide trusted healthcare services with expert doctors.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="doctors.html">Doctors</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-links">
+                <h3>Our Services</h3>
+                <a href="services.html">Cardiology</a>
+                <a href="services.html">Neurology</a>
+                <a href="services.html">Dentistry</a>
+                <a href="services.html">Pediatrics</a>
+                <a href="services.html">Gynecology</a>
+                <a href="services.html">Dermatology</a>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>📍 Karachi, Pakistan</p>
+                <p>📞 +92 300 1234567</p>
+                <p>✉ info@medtik.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Medtik. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- =====FOOTER SECTION END===== -->
+
+    <!-- ======BACK TO TOP BUTTON START====== -->
+    <button id="backToTop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <!-- ======BACK TO TOP BUTTON END====== -->
+    <!-- =====JAVASCRIPT LINK===== -->
+    <script src="./src/main.js"></script>
+</body>
+
+</html>
